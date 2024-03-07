@@ -7,10 +7,12 @@
   </a>
   <br />
   <p>
+    <br />
     Мой сайт, на котором можно отправлять запросы в ChatGPT от OpenAI и получать ответы. <br />
-    Рабочее название: <b>ChatGPT-helper</b>.
+    Рабочее название: <b>ChatGPT-helper</b>.<br />
      <br />
-    My site, where you can send requests to ChatGPT (OpenAI) and receive responses.
+    <br />
+    My site, where you can send requests to ChatGPT (OpenAI) and receive responses.<br />
     Working title: <b>ChatGPT-helper</b>.
     <br />
     <br />
