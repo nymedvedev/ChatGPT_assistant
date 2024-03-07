@@ -2,7 +2,7 @@
 <div align="center">
   <h1>ChatGPT-assistant</h1>
   <a href="https://github.com/nymedvedev/ChatGPT_assistant.git">
-    <img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/chatgpt_assistant_logo.png?raw=true" alt="Logo" width="960" height="234">
+    <img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/chatgpt_assistant_logo.png?raw=true" alt="Logo" width="960" height="230">
   </a>
   <br />
   <p>
@@ -69,6 +69,25 @@ In this example, the request "Write 2 burger recipes" was sent. The response inf
 Настроил сохранение текста запросов пользователей и текста ответов ChatGPT в базу данных MySQL на веб-сервере. С целью возможности в дальнейшем проанализировать данные и определить роли для ChatGPT-ассистента, которые можно будет выбрать зарегистрированному пользователю. Чтобы ChatGPT отвечал в определённой манере, либо подстраивался под конкретного пользователя.<br />
 <br />
 Configured saving the text of user requests and the text of ChatGPT responses to the MySQL database on the web server. In order to be able to further analyze the data and determine the roles for the ChatGPT assistant that can be selected by the registered user. So that ChatGPT responds in a certain manner, or adapts to a specific user.<br />
+<br />
+<br />
+## Технические нюансы / Technical nuances
+Проект разрабатывал в следующем порядке:
+<ol>
+  <li> Создал базовый проект на Django.</li>
+  <li> Подключился к удалённому рабочему пустому репозиторию на GitHub. 
+   <ol> <li> Далее все обновления проекта отправлял в него. </li>
+        <li> Проект на репозитории = проект на веб-сервере компании. </li>
+        <li> Поэтому так я отслеживал поведение проекта не только на локальном сервере. </li>
+   </ol> 
+  <li> Создал шаблоны страниц авторизации, регистрации и формы отправки на HTML с CSS. </li>
+  <li> Создал приложение useers для работы с блоком функций для авторизации/регистрации пользователей. </li>
+  <li> В users прописал необходимые URLs, models, views. Писать такие мелочи, как "добавил то-то и это в settings" не буду.</li>
+  <li> Создал базовый проект на Django.</li>
+  <li> Создал базовый проект на Django.</li>
+  <li> Создал базовый проект на Django.</li>
+  
+</ol>
 <br />
 <br />
 В настоящее время проект находится в работе, о новых функциях сообщу здесь дополнительно!<br />
