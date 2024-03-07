@@ -1,7 +1,7 @@
 <a name="readme-top"></a>
 <div align="center">
   <a href="https://github.com/nymedvedev/ChatGPT_assistant.git">
-    <img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/logo.png?raw=true" alt="Logo" width="1890" height="610">
+    <img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/logo.png?raw=true" alt="Logo" width="630" height="203">
   </a>
   <h1>ChatGPT-assistant</h1>
   <p>
