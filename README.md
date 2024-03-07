@@ -1,15 +1,17 @@
 <a name="readme-top"></a>
 <div align="center">
   <h1>ChatGPT-assistant</h1>
+  <br />
   <a href="https://github.com/nymedvedev/ChatGPT_assistant.git">
     <img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/logo.png?raw=true" alt="Logo" width="630" height="203">
   </a>
-  
+  <br />
   <p>
     Мой сайт, на котором можно отправлять запросы в ChatGPT от OpenAI и получать ответы. <br />
     Рабочее название: <b>ChatGPT-helper</b>.
      <br />
     My site, where you can send requests to ChatGPT (OpenAI) and receive responses.
+    Working title: <b>ChatGPT-helper</b>.
     <br />
     <br />
   </p>
@@ -21,10 +23,10 @@
 <br />
 <img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Authorization.png?raw=true" alt="Authorization page">
 В рамках своего первого рабочего проекта я сделал сайт, связанный с ChatGPT от OpenAI через API Assistant.
-На главной странице сайта - форма авторизации, либо вы можете зарегистрироваться. <br />
+На главной странице сайта - форма авторизации, либо вы можете нажать кнопку "Регистрация". <br />
 <br />
 As part of my first working project, I made a website related to ChatGPT from OpenAI via the API Assistant.
-There is an authorization form on the main page of the site, or you can register.
+There is an authorization form on the main page of the site, or you can click the "Register" button.
 
 <br />
 На странице регистрации требуется ввести вашу эл. почту и придумать пароль для входа. <br />
