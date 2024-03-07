@@ -2,7 +2,7 @@
 <div align="center">
   <h1>ChatGPT-assistant</h1>
   <a href="https://github.com/nymedvedev/ChatGPT_assistant.git">
-    <img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/logo.png?raw=true" alt="Logo" width="630" height="203">
+    <img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/chatgpt_assistant_logo.png?raw=true" alt="Logo" width="960" height="234">
   </a>
   <br />
   <p>
@@ -20,62 +20,60 @@
 
 <!-- ABOUT THE PROJECT -->
 ## О проекте / About The Project
-<img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Authorization.png?raw=true" alt="Authorization page">
-В рамках своего первого рабочего проекта я сделал сайт, связанный с ChatGPT от OpenAI через API Assistant.
+<img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Authorization.png?raw=true" alt="Authorization page"><br />
+В рамках своего первого рабочего проекта я сделал сайт, связанный с ChatGPT от OpenAI через API Assistant.<br />
 На главной странице сайта - форма авторизации, либо вы можете нажать кнопку "Регистрация". <br />
 <br />
-As part of my first working project, I made a website related to ChatGPT from OpenAI via the API Assistant.
-There is an authorization form on the main page of the site, or you can click the "Register" button.
-
+As part of my first working project, I made a website related to ChatGPT from OpenAI via the API Assistant.<br />
+There is an authorization form on the main page of the site, or you can click the "Register" button.<br />
 <br />
+<br />
+<img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Registration.png?raw=true" alt="Registration page"><br />
 На странице регистрации требуется ввести вашу эл. почту и придумать пароль для входа. <br />
+После регистрации страница обновится, вы авторизируетесь и попадёте на страницу с формой отправки запросов в ChatGPT.<br />
 <br />
-On the registration page, you need to enter your email address and come up with a password to log in.
-<br />
-<br />
-<img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Registration.png?raw=true" alt="Registration page">
-После регистрации страница обновится, вы авторизируетесь и попадёте на страницу с формой отправки запросов в ChatGPT.
-<br />
-After registration, the page will be updated, you will log in and get to the page with the form for sending requests to ChatGPT.
+
+On the registration page, you need to enter your email address and come up with a password to log in.<br />
+After registration, the page will be updated, you will log in and get to the page with the form for sending requests to ChatGPT.<br />
 <br />
 <br />
-<img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Form%20request.png?raw=true" alt="Form request page">
-Страница отправки запросов выглядит следующим образом.
+<img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Form%20request.png?raw=true" alt="Form request page"><br />
+Страница отправки запросов выглядит следующим образом.<br />
 <br />
-The request submission page looks like this.
+The request submission page looks like this.<br />
 <br />
 <br />
-<img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Response%20with%20serials.png?raw=true" alt="Response page">
+<img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Response%20with%20serials.png?raw=true" alt="Response page"><br />
 После отправки запроса страница обновится и вы окажетесь на странице с формой вывода ответа. Тут же можно отправить следующий запрос.
-В данном примере был направлен запрос "Напиши 5 отличных сериалов."
+В данном примере был направлен запрос "Напиши 5 отличных сериалов."<br />
 <br />
 After sending the request, the page will be updated and you will find yourself on a page with a response output form. You can immediately send the following request.
-In this case, the request was sent "Write 5 great TV series."
+In this case, the request was sent "Write 5 great TV series."<br />
 <br />
 <br />
-<img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Response%20with%20code.png?raw=true" alt="Response page">
-В данном примере был направлен запрос "Напиши калькулятор на Python." Форма вывода идентифицирует код и формирует вывод кода с подсветкой синтаксиса.
-Корректно выводится код любого ЯП: Python, JavaScript, Ruby, C++, Java и т.д. (за это отвечает соотв. функция моего проекта)
+<img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Response%20with%20code.png?raw=true" alt="Response page"><br />
+В данном примере был направлен запрос "Напиши калькулятор на Python." Форма вывода идентифицирует код и формирует вывод кода с подсветкой синтаксиса.<br />
+Корректно выводится код любого языка программирования: Python, JavaScript, Ruby, C++, Java и т.д. (за это отвечает соотв. функция моего проекта)<br />
 <br />
-In this example, the request was sent "Write a calculator in Python." The output form identifies the code and generates code output with syntax highlighting.
-The code of any YAP is displayed correctly: Python, JavaScript, Ruby, C++, Java, etc. (responsible for this is the corresponding my project's function)
+In this example, the request was sent "Write a calculator in Python." The output form identifies the code and generates code output with syntax highlighting.<br />
+The code of any Programming language is displayed correctly: Python, JavaScript, Ruby, C++, Java, etc. (responsible for this is the corresponding my project's function)<br />
 <br />
 <br />
-<img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Response%20with%20recipes.png?raw=true" alt="Response page">
-В данном примере был направлен запрос "Напиши 2 рецепта бургеров". Информация ответа, содержащая списки и подпункты, выводится аккуратно упорядоченной. (за это отвечает соотв. функция моего проекта)
+<img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Response%20with%20recipes.png?raw=true" alt="Response page"><br />
+В данном примере был направлен запрос "Напиши 2 рецепта бургеров". Информация ответа, содержащая списки и подпункты, выводится аккуратно упорядоченной. (за это отвечает соотв. функция моего проекта)<br />
 <br />
-In this example, the request "Write 2 burger recipes" was sent. The response information containing lists and sub-items is displayed in a neatly ordered manner. (responsible for this is the corresponding my project's function)
+In this example, the request "Write 2 burger recipes" was sent. The response information containing lists and sub-items is displayed in a neatly ordered manner. (responsible for this is the corresponding my project's function)<br />
 <br />
 <br />
 <img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/MySQL%20DB.png?raw=true" alt="MySQL DB page">
-Настроил сохранение текста запросов пользователей и текста ответов ChatGPT в базу данных MySQL на веб-сервере. С целью возможности в дальнейшем проанализировать данные и определить роли для ChatGPT-ассистента, которые можно будет выбрать зарегистрированному пользователю. Чтобы ChatGPT отвечал в определённой манере, либо подстраивался под конкретного пользователя.
+Настроил сохранение текста запросов пользователей и текста ответов ChatGPT в базу данных MySQL на веб-сервере. С целью возможности в дальнейшем проанализировать данные и определить роли для ChatGPT-ассистента, которые можно будет выбрать зарегистрированному пользователю. Чтобы ChatGPT отвечал в определённой манере, либо подстраивался под конкретного пользователя.<br />
 <br />
-Configured saving the text of user requests and the text of ChatGPT responses to the MySQL database on the web server. In order to be able to further analyze the data and determine the roles for the ChatGPT assistant that can be selected by the registered user. So that ChatGPT responds in a certain manner, or adapts to a specific user.
+Configured saving the text of user requests and the text of ChatGPT responses to the MySQL database on the web server. In order to be able to further analyze the data and determine the roles for the ChatGPT assistant that can be selected by the registered user. So that ChatGPT responds in a certain manner, or adapts to a specific user.<br />
 <br />
 <br />
-В настоящее время проект находится в работе, о новых функциях сообщу здесь дополнительно!
+В настоящее время проект находится в работе, о новых функциях сообщу здесь дополнительно!<br />
 <br />
-The project is currently in progress, I will inform you about new features here additionally!
+The project is currently in progress, I will inform you about new features here additionally!<br />
 <br />
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
