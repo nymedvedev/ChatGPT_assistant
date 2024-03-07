@@ -1,7 +1,6 @@
 <a name="readme-top"></a>
 <div align="center">
   <h1>ChatGPT-assistant</h1>
-  <br />
   <a href="https://github.com/nymedvedev/ChatGPT_assistant.git">
     <img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/logo.png?raw=true" alt="Logo" width="630" height="203">
   </a>
@@ -21,8 +20,6 @@
 
 <!-- ABOUT THE PROJECT -->
 ## О проекте / About The Project
-
-<br />
 <img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Authorization.png?raw=true" alt="Authorization page">
 В рамках своего первого рабочего проекта я сделал сайт, связанный с ChatGPT от OpenAI через API Assistant.
 На главной странице сайта - форма авторизации, либо вы можете нажать кнопку "Регистрация". <br />
