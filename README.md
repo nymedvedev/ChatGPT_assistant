@@ -1,9 +1,10 @@
 <a name="readme-top"></a>
 <div align="center">
+  <h1>ChatGPT-assistant</h1>
   <a href="https://github.com/nymedvedev/ChatGPT_assistant.git">
     <img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/logo.png?raw=true" alt="Logo" width="630" height="203">
   </a>
-  <h1>ChatGPT-assistant</h1>
+  
   <p>
     Мой сайт, на котором можно отправлять запросы в ChatGPT от OpenAI и получать ответы. <br />
     Рабочее название: <b>ChatGPT-helper</b>.
