@@ -8,10 +8,12 @@
   <p>
     <br />
     Мой сайт, на котором можно отправлять запросы в ChatGPT от OpenAI и получать ответы. <br />
+    Презентую, как выглядит результат моей коммерческой разработки.<br />
     Рабочее название: <b>ChatGPT-helper</b>.<br />
      <br />
     <br />
     My site, where you can send requests to ChatGPT (OpenAI) and receive responses.<br />
+    I present what the result of my commercial development looks like.<br />
     Working title: <b>ChatGPT-helper</b>.
     <br />
     <br />
@@ -21,7 +23,7 @@
 <!-- ABOUT THE PROJECT -->
 ## О проекте / About The Project
 <img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Authorization.png?raw=true" alt="Authorization page"><br />
-В рамках своего первого рабочего проекта я сделал сайт, связанный с **ChatGPT** от **OpenAI** через **API Assistant**.<br />
+В рамках своего первого **рабочего проекта** я сделал сайт, связанный с **ChatGPT** от **OpenAI** через **API Assistant**.<br />
 На главной странице сайта - **форма авторизации**, либо вы можете нажать кнопку "**Регистрация**". <br />
 <br />
 As part of my first working project, I made a website related to ChatGPT from OpenAI via the API Assistant.<br />
@@ -43,12 +45,12 @@ After registration, the page will be updated, you will log in and get to the pag
 The request submission page looks like this.<br />
 <br />
 <br />
-<img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Response%20with%20serials.png?raw=true" alt="Response page"><br />
+<img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Response%20with%20list.jpg?raw=true" alt="Response page"><br />
 После отправки запроса страница обновится и вы окажетесь на странице с формой вывода ответа. Тут же можно отправить **следующий запрос**.
-В данном примере был направлен запрос "**_Напиши 5 отличных сериалов._**"<br />
+В данном примере был направлен запрос "**_Напиши 10 вещей, которые нельзя делать в спорт-зале._**"<br />
 <br />
 After sending the request, the page will be updated and you will find yourself on a page with a response output form. You can immediately send the following request.
-In this case, the request was sent "Write 5 great TV series."<br />
+In this case, the request was sent "Write down 10 things you can't do in the gym."<br />
 <br />
 <br />
 <img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/screenshots/Response%20with%20code.png?raw=true" alt="Response page"><br />
