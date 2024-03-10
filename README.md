@@ -139,7 +139,7 @@ Configured saving the text of user requests and the text of ChatGPT responses to
 </ol>
 <br />
 <br />
-В настоящее время проект находится в работе, о новых функциях сообщу здесь дополнительно!<br />
+В настоящее время продолжаю работать над проектом, о новых функциях напишу здесь дополнительно!<br />
 <br />
 <br />
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
