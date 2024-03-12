@@ -2,7 +2,7 @@
 <div align="center">
   <h1>ChatGPT-assistant</h1>
   <a href="https://github.com/nymedvedev/ChatGPT_assistant.git">
-    <img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/chatgpt_assistant_logo.png?raw=true" alt="Logo" width="960" height="230">
+    <img src="https://github.com/nymedvedev/ChatGPT_assistant/blob/main/chatgpt_assistant_logo.png?raw=true" alt="Logo" width="960" height="220">
   </a>
   <br />
   <p>
