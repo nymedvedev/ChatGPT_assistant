@@ -135,7 +135,7 @@ Configured saving the text of user requests and the text of ChatGPT responses to
   <br />
           - Добавил в HTML-документ формы вывода ответа <b>шаблонный тег</b> Django с <b>Java-Script</b>-скриптом для отобр. ответа с учётом форматирования текста выводимого ответа;<br />
   <br />
-     <li> Спрятал Secret Key Django-проекта и пароль от БД MySQL во внешнем окружении.</b> </li>     
+     <li> Спрятал Secret Key Django-проекта, OPENAI_API_KEY и пароль от БД MySQL - во внешнем окружении (использ. библиотеку dotenv).</b> </li>     
 </ol>
 <br />
 <br />
