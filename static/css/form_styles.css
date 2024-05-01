@@ -1,0 +1,178 @@
+/*Контейнер, в котором нахоятся все поля формы запроса*/  
+.form_request_block{
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    background-size: cover;
+    border-radius: 15px;
+    opacity: 0.9;
+}
+/* отступ указанного блока вниз */
+.form_request_block_content{
+  padding-top: 25%;
+}
+/*заголовок формы*/  
+.form_request_block_head_text{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 25px;
+    font-weight: 600;
+    background: #ffffff;
+    opacity: 0.7;
+    /*font-family: 'Chakra Petch', sans-serif;*/
+    font-family: 'Play', sans-serif;
+    border-radius: 15px;
+
+}
+/*стили на слуйчай, если для полей ввода нужно будет написать названия
+.form_request_block label{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #ffffff;
+    opacity: 0.7;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: 2px solid #F0FFFF;
+} */ 
+
+/*поле ввода запроса*/ 
+.form_request_block textarea{
+  display: block;
+  margin: 0 auto;
+  width: 99%;
+  height: 200px;
+  border-radius: 10px;  
+  /*border: none;*/
+  outline: none;
+  font-family: 'Play', sans-serif;
+  border: 3px solid #D8BFD8;
+  text-indent: 20px;
+  font-size: 18px;
+}
+
+
+/*выделение поля ввода*/ 
+textarea:focus {
+    color: #000000;
+    border-radius: 10px;
+    border: 3px solid #00BFFF;
+    text-indent: 20px;
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+}
+/*кнопка отправить*/ 
+.form_request_button {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Play', sans-serif;
+    line-height: 16px;
+    font-weight: 900;
+    font-size: 18px;
+}
+    /*кнопка отправить - выделение*/ 
+.form_request_button:hover {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Play', sans-serif;
+    line-height: 16px;
+    font-weight: 900;
+    font-size: 18px;
+    background-color: lavender;
+}
+/*тут фон страницы*/ 
+body {
+   height: auto;
+   width: auto;
+   background-image: url(https://images.unsplash.com/photo-1702471896959-e6867cf48741?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+   background-repeat: repeat;/*we want to have one single image not a repeated one*/  
+   background-size: cover;/*this sets the image to fullscreen covering the whole screen*/  
+   /*css hack for ie*/     
+   filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='фон странички',sizingMethod='scale');
+   -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='фон странички',sizingMethod='scale')";
+}
+
+/*Контейнер, в котором нахоятся все поля формы запроса*/  
+.form_output_block{
+    width: 700px;
+    height: 700px;
+    margin: 0 auto;
+    background-size: cover;
+    border-radius: 15px;
+    opacity: 0.9;
+}
+/*отступ указанного блока вниз*/  
+.form_output_block_content{
+  padding-top: 1%;
+}
+/*поле ввода запроса*/ 
+.form_output_block textarea{
+  display: block;
+  margin: 0 auto;
+  width: 99%;
+  height: 200px;
+  border-radius: 10px;  
+  /*border: none;*/
+  outline: none;
+  font-family: 'Play', sans-serif;
+  border: 3px solid #D8BFD8;
+  text-indent: 20px;
+  font-size: 18px;
+}
+/*заголовок формы*/  
+.form_answer_text{
+    display: block;
+    text-align: left;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 300;
+    background: #ffffff;
+    opacity: 0.9;
+    /*font-family: 'Chakra Petch', sans-serif;*/
+    font-family: 'Play', sans-serif;
+    border-radius: 15px;
+    height: 300px;
+    overflow: auto;
+}
+/*поле ввода запроса*/ 
+.form_request_block_new textarea{
+  display: block;
+  margin: 0 auto;
+  width: 99%;
+  height: 200px;
+  border-radius: 10px;  
+  /*border: none;*/
+  outline: none;
+  font-family: 'Play', sans-serif;
+  border: 3px solid #D8BFD8;
+  text-indent: 20px;
+  font-size: 18px;
+}
+
+
+/*выделение поля ввода*/ 
+.form_request_block_new textarea:focus {
+    color: #000000;
+    border-radius: 10px;
+    border: 3px solid #00BFFF;
+    text-indent: 20px;
+    font-family: 'Play', sans-serif;
+    font-size: 18px;
+}
+/*Это стили для placeholder*/
+::-webkit-input-placeholder {color:#3f3f44; padding-left: 10px;}
+::-moz-placeholder          {color:#3f3f44; padding-left: 10px;}
+:-moz-placeholder           {color:#3f3f44; padding-left: 10px;}
+:-ms-input-placeholder      {color:#3f3f44; padding-left: 10px;}

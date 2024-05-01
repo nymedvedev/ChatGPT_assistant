@@ -1,0 +1,141 @@
+/*Контейнер, в котором нахоятся все поля формы авторизации*/
+.form_auth_block{
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+    background-size: cover;
+    border-radius: 15px;
+    opacity: 0.9;
+}
+/*отступ указанного блока вниз*/
+.form_auth_block_content{
+  padding-top: 5%;
+}
+/*заголовок формы*/
+.form_auth_block_head_text{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    font-size: 24px;
+    font-weight: 300;
+    background: #ffffff;
+    opacity: 0.7;
+    font-family: 'Play', sans-serif;
+    /*font-family: 'Roboto', sans-serif;*/
+    border-radius: 15px;
+
+}
+/*стили на слуйчай, если для полей ввода нужно будет написать названия
+.form_auth_block label{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    background: #ffffff;
+    opacity: 0.7;
+    font-weight: 600;
+    margin-bottom: 10px;
+    margin-top: 10px;
+}*/
+/*стили для полей ввода*/
+.form_auth_block input{
+  display: block;
+  margin: 0 auto;
+  width: 60%;
+  height: 30px;
+  border-radius: 10px;
+  outline: none;
+  font-family: 'Play', sans-serif;
+  border: 2px solid #F0FFFF;
+  text-indent: 10px;
+  font-size: 15px;
+}
+/*наведение курсона на поля ввода*/
+input:focus {
+    color: #000000;
+    border-radius: 10px;
+    border: 2px solid #436fea;
+    text-indent: 10px;
+    font-size: 15px;
+
+}
+/*кнопка "Войти"*/
+.form_enter_button {
+    background: #F8F8FF;
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Play', sans-serif;
+    line-height: 16px;
+    font-weight: 900;
+    font-size: 18px;
+    float: left;
+    margin-left: 19%;
+}
+/*кнопка "Войти" - выделение*/
+.form_enter_button:hover {
+    background-color: lightgrey;
+}
+/* кнопка "Зарегистрароваться" */
+a.form_register_button {
+    display: block;
+    width: 30%;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 27px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Play', sans-serif;
+    line-height: 16px;
+    font-weight: 900;
+    font-size: 18px;
+    float: left;
+    margin-left: 10px;
+    text-align: center;
+    color: black;
+    text-decoration: none;
+    outline: none;
+    background: #F8F8FF;
+    padding-top: 8px;
+}
+/*кнопка "Зарегистрароваться" - выделение*/
+a.form_register_button:hover {
+    background-color: lightgrey;
+}
+.form_register_button_big {
+    display: block;
+    width: 61%;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 35px;
+    border: none;
+    cursor: pointer;
+    font-family: 'Play', sans-serif;
+    line-height: 16px;
+    font-weight: 900;
+    font-size: 18px;
+
+}
+/*кнопка "Зарегистрароваться" - выделение*/
+.form_register_button_big:hover {
+    background-color: lightgrey;
+}
+/*тут фон страницы*/
+body {
+    height: auto;
+    width: auto;
+    background-image: url(https://images.unsplash.com/photo-1699862160391-97c6e8dcd173?q=80&w=1932&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+    background-repeat: no-repeat;/*we want to have one single image not a repeated one*/
+    background-size: cover;/*this sets the image to fullscreen covering the whole screen*/
+    /*css hack for ie*/
+    filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='фон странички',sizingMethod='scale');
+    -ms-filter:"progid:DXImageTransform.Microsoft.AlphaImageLoader(src='фон странички',sizingMethod='scale')";
+    }
+/*Это стили для placeholder*/
+::-webkit-input-placeholder {color:#3f3f44; padding-left: 10px;}
+::-moz-placeholder          {color:#3f3f44; padding-left: 10px;}
+:-moz-placeholder           {color:#3f3f44; padding-left: 10px;}
+:-ms-input-placeholder      {color:#3f3f44; padding-left: 10px;}

@@ -1,0 +1,313 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="UTF-8">
+        <title>ChatGPT-helper</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/styles/default.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.0.1/highlight.min.js"></script>
+        <script>hljs.initHighlightingOnLoad();</script>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Play&display=swap" rel="stylesheet">
+        <style>
+        /*Контейнер, в котором находятся все поля формы запроса*/
+            .form_request_block{
+                width: 700px;
+                height: 700px;
+                margin: 0 auto;
+                background-size: cover;
+                border-radius: 15px;
+                opacity: 0.9;
+            }
+            /*отступ указанного блока вниз*/
+            .form_request_block_content{
+              padding-top: 1%;
+            }
+            /*заголовок формы*/
+            .form_request_block_head_text{
+                display: block;
+                text-align: center;
+                padding: 10px;
+                font-size: 25px;
+                font-weight: 600;
+                background: #ffffff;
+                opacity: 0.7;
+                /*font-family: 'Chakra Petch', sans-serif;*/
+                font-family: 'Play', sans-serif;
+                border-radius: 15px;
+
+            }
+            /*стили на случай, если для полей ввода нужно будет написать названия
+            .form_request_block label{
+                display: block;
+                text-align: center;
+                padding: 10px;
+                background: #ffffff;
+                opacity: 0.7;
+                font-weight: 600;
+                margin-bottom: 10px;
+                margin-top: 10px;
+                border: 2px solid #F0FFFF;
+            } */
+
+            /*поле ввода запроса*/
+            .form_request_block textarea{
+              display: block;
+              margin: 0 auto;
+              width: 99%;
+              height: 200px;
+              border-radius: 10px;
+              /*border: none;*/
+              outline: none;
+              font-family: 'Play', sans-serif;
+              border: 3px solid #D8BFD8;
+              text-indent: 20px;
+              font-size: 18px;
+            }
+
+
+            /*выделение поля ввода*/
+            textarea:focus {
+                color: #000000;
+                border-radius: 10px;
+                border: 3px solid #00BFFF;
+                text-indent: 20px;
+                font-family: 'Play', sans-serif;
+                font-size: 18px;
+            }
+            /*кнопка отправить*/
+            .form_request_button {
+                display: block;
+                width: 60%;
+                margin: 0 auto;
+                border-radius: 10px;
+                height: 35px;
+                border: none;
+                cursor: pointer;
+                font-family: 'Play', sans-serif;
+                line-height: 16px;
+                font-weight: 900;
+                font-size: 18px;
+            }
+                /*кнопка отправить - выделение*/
+            .form_request_button:hover {
+                display: block;
+                width: 60%;
+                margin: 0 auto;
+                border-radius: 10px;
+                height: 35px;
+                border: none;
+                cursor: pointer;
+                font-family: 'Play', sans-serif;
+                line-height: 16px;
+                font-weight: 900;
+                font-size: 18px;
+                background-color: lavender;
+            }
+            /*тут фон страницы*/
+            body {
+               overflow: hidden;
+               height: auto;
+               width: auto;
+               background-image: url(https://images.unsplash.com/photo-1702471896959-e6867cf48741?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D);
+               background-repeat: repeat;/*we want to have one single image not a repeated one*/
+               background-size: cover;/*this sets the image to fullscreen covering the whole screen*/
+               /*css hack for ie*/
+               filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='фон странички',sizingMethod='scale');
+               -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='фон странички',sizingMethod='scale')";
+            }
+
+            /*Контейнер, в котором нахоятся все поля формы запроса*/
+            .form_output_block{
+                width: 700px;
+                height: auto;
+                margin: 0 auto;
+                background-size: cover;
+                border-radius: 15px;
+                opacity: 0.9;
+            }
+            /*отступ указанного блока вниз*/
+            .form_output_block_content{
+              padding-top: 1%;
+            }
+            /*поле ввода запроса*/
+            .form_output_block textarea{
+              display: block;
+              margin: 0 auto;
+              width: 99%;
+              height: 200px;
+              border-radius: 10px;
+              /*border: none;*/
+              outline: none;
+              font-family: 'Play', sans-serif;
+              border: 3px solid #D8BFD8;
+              text-indent: 20px;
+              font-size: 18px;
+            }
+            /*заголовок формы*/
+            .form_answer_text{
+                display: block;
+                text-align: left;
+                padding: 10px;
+                font-size: 16px;
+                font-weight: 300;
+                background: #ffffff;
+                opacity: 0.9;
+                /*font-family: 'Chakra Petch', sans-serif;*/
+                font-family: 'Play', sans-serif;
+                border-radius: 15px;
+                height: 300px;
+                overflow: auto;
+            }
+            /*поле ввода запроса*/
+            .form_request_block_new textarea{
+              display: block;
+              margin: 0 auto;
+              width: 99%;
+              height: 200px;
+              border-radius: 10px;
+              /*border: none;*/
+              outline: none;
+              font-family: 'Play', sans-serif;
+              border: 3px solid #D8BFD8;
+              text-indent: 20px;
+              font-size: 18px;
+            }
+            /*выделение поля ввода*/
+            .form_request_block_new textarea:focus {
+                color: #000000;
+                border-radius: 10px;
+                border: 3px solid #00BFFF;
+                text-indent: 20px;
+                font-family: 'Play', sans-serif;
+                font-size: 18px;
+            }
+            /*Это стили для placeholder*/
+            ::-webkit-input-placeholder {color:#3f3f44; padding-left: 10px;}
+            ::-moz-placeholder          {color:#3f3f44; padding-left: 10px;}
+            :-moz-placeholder           {color:#3f3f44; padding-left: 10px;}
+            :-ms-input-placeholder      {color:#3f3f44; padding-left: 10px;}
+            .form_answer_text pre {
+            background-color: #272822;
+            color: #f8f8f2;
+            padding: 10px;
+            border-radius: 5px;
+            overflow: auto;
+        }
+
+        .form_answer_text pre code {
+            display: block;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+            font-size: 1em;
+        }
+        .highlight {
+          background-color: #f8f8f8;
+          border: 1px solid #ddd;
+          padding: 10px;
+          border-radius: 5px;
+        }
+
+        .highlight pre {
+          margin: 0;
+          padding: 0;
+        }
+        .highlight .c { color: #408080; font-style: italic } /* Comment */
+        .highlight .err { border: 1px solid #FF0000 } /* Error */
+        .highlight .k { color: #008000; font-weight: bold } /* Keyword */
+        .highlight .o { color: #666666 } /* Operator */
+        .highlight .ch { color: #408080; font-style: italic } /* Comment.Hashbang */
+        .highlight .cm { color: #408080; font-style: italic } /* Comment.Multiline */
+        .highlight .cp { color: #BC7A00 } /* Comment.Preproc */
+        .highlight .cpf { color: #408080; font-style: italic } /* Comment.PreprocFile */
+        .highlight .c1 { color: #408080; font-style: italic } /* Comment.Single */
+        .highlight .cs { color: #408080; font-style: italic } /* Comment.Special */
+        .highlight .gd { color: #A00000 } /* Generic.Deleted */
+        .highlight .ge { font-style: italic } /* Generic.Emph */
+        .highlight .gr { color: #FF0000 } /* Generic.Error */
+        .highlight .gh { color: #000080; font-weight: bold } /* Generic.Heading */
+        .highlight .gi { color: #00A000 } /* Generic.Inserted */
+        .highlight .go { color: #888888 } /* Generic.Output */
+        .highlight .gp { color: #000080; font-weight: bold } /* Generic.Prompt */
+        .highlight .gs { font-weight: bold } /* Generic.Strong */
+        .highlight .gu { color: #800080; font-weight: bold } /* Generic.Subheading */
+        .highlight .gt { color: #0044DD } /* Generic.Traceback */
+        .highlight .kc { color: #008000; font-weight: bold } /* Keyword.Constant */
+        .highlight .kd { color: #008000; font-weight: bold } /* Keyword.Declaration */
+        .highlight .kn { color: #008000; font-weight: bold } /* Keyword.Namespace */
+        .highlight .kp { color: #008000 } /* Keyword.Pseudo */
+        .highlight .kr { color: #008000; font-weight: bold } /* Keyword.Reserved */
+        .highlight .kt { color: #B00040 } /* Keyword.Type */
+        .highlight .m { color: #666666 } /* Literal.Number */
+        .highlight .s { color: #BA2121 } /* Literal.String */
+        .highlight .na { color: #7D9029 } /* Name.Attribute */
+        .highlight .nb { color: #008000 } /* Name.Builtin */
+        .highlight .nc { color: #0000FF; font-weight: bold } /* Name.Class */
+        .highlight .no { color: #880000 } /* Name.Constant */
+        .highlight .nd { color: #AA22FF } /* Name.Decorator */
+        .highlight .ni { color: #999999; font-weight: bold } /* Name.Entity */
+        .highlight .ne { color: #D2413A; font-weight: bold } /* Name.Exception */
+        .highlight .nf { color: #0000FF } /* Name.Function */
+        .highlight .nl { color: #A0A000 } /* Name.Label */
+        .highlight .nn { color: #0000FF; font-weight: bold } /* Name.Namespace */
+        .highlight .nt { color: #008000; font-weight: bold } /* Name.Tag */
+        .highlight .nv { color: #19177C } /* Name.Variable */
+        .highlight .ow { color: #AA22FF; font-weight: bold } /* Operator.Word */
+        .highlight .w { color: #bbbbbb } /* Text.Whitespace
+        </style>
+    </head>
+    <body>
+<div class="form_output_block">
+  <div class="form_output_block_content">
+    <p class="form_request_block_head_text">ChatGPT-helper</p>
+      <div class="form_answer_text" id="answer_text">
+                <div class="answer_content">{{ answer|safe }}</div>
+            </div>
+      <br>
+  </div>
+</div>
+      <div class="form_request_block">
+        <div class="form_request_block_content">
+      <form class="form_request_style" id="requestForm" method="post">
+        {% csrf_token %}
+        {{ form.request }}
+          <br>
+      <button class="form_request_button" type="submit" name="form_request_submit">Отправить</button>
+    </form>
+       <script>
+                $(document).ready(function() {
+                    $("#requestForm").submit(function(event) {
+                        event.preventDefault();
+                        $.ajax({
+                            url: "{% url 'update_answer' %}",
+                            type: "POST",
+                            data: $(this).serialize(),
+                            dataType: 'json',
+                            success: function(data) {
+                if ('answer' in data) {
+                    $('#answer_text .answer_content').html(data.answer);
+                    $('#id_request').val('');
+
+                    // Добавляем стили pygments к новому коду
+                    $('pre code').each(function(i, block) {
+                        hljs.highlightBlock(block);
+                                });
+                            } else if ('error' in data) {
+                                alert(data.error);
+                            }
+                        },
+                        error: function(jqXHR, textStatus, errorThrown) {
+                            // Handle error response
+                        }
+                    });
+                });
+            });
+            </script>
+    </div>
+</div>
+    </body>
+</html>
