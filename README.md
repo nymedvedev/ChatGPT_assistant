@@ -143,8 +143,27 @@ Configured saving the text of user requests and the text of ChatGPT responses to
 <br />
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-### Разработал с помощью / Built With
 
+## Как запустить / How to launch
+
+1. Создайте виртуальное окружение.
+2. Установите Django и другие элементы списка requirements.txt
+3. Создайте файл ".env" в папке с проектом, со следующим содержимым:
+   * OPENAI_API_KEY="тут-должен-быть-ваш-API-KEY-от-OPEN-AI"
+   * SECRET_KEY="тут-должен-быть-ваш-SECRET-KEY-из-settings.py"
+   * DB_PASSWORD="пароль_от_БД" (если у вас БД на веб-сервере, в противном случае данная строка не нужна)
+4. Измените настройки DATABASE в settings.py в соответствии с расположением и типом вашей БД. (например, на настройки по-умолчанию)
+5. В forms/views.py измените название таблицы БД с "standalone_traffic" на ваше название.
+6. Примените миграции (python manage.py makemigrations и python manage.py migrate).
+7. Если у вас есть OPENAI_API_KEY и вы из РФ пробуете запустить проект на локальном сервере, не забудьте включить VPN.
+
+
+
+**Примечание: удалил из файлов проекта db.sqlite3, Dockerfile, docker-compose и .env, т.к. указанные файлы содержали коммерческие данные.**
+
+
+
+### Разработал с помощью / Built With
 
 * [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)][Python-url]
 * [![Django](https://img.shields.io/badge/django-%23092E20.svg?style=for-the-badge&logo=django&logoColor=white)][Django-url]
@@ -168,9 +187,11 @@ Project Link: [https://github.com/nymedvedev/ChatGPT_assistant](https://github.c
 
 ## [Лицензия / License](https://github.com/nymedvedev/ChatGPT_assistant/blob/main/LICENSE.md)
 
+
 <b>ChatGPT_assistant</b> © [Medvedev Nikolay](https://github.com/nymedvedev)
 
-
+<br />
+<br />
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
